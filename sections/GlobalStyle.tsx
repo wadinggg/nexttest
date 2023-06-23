@@ -1,7 +1,8 @@
-import { createGlobalStyle } from "styled-components";
+import { ExecutionProps, createGlobalStyle } from "styled-components";
 import { color } from "../system";
+import { NamedExoticComponent } from "react";
 
-const GlobalStyle = createGlobalStyle`
+const GlobalStyle: NamedExoticComponent<ExecutionProps & TemplateStringsArray> = createGlobalStyle`
     * {
         box-sizing: border-box;
         padding: 0;
@@ -13,8 +14,8 @@ const GlobalStyle = createGlobalStyle`
         font-family: 'Noto Sans', Helvetics, sans-serif;
         max-width: 100vw;
         overflow-x: hidden;
-        background-color: ${color.chroma.creme100};
-        color: ${color.chroma.brown100};
+        background-color: hsl(21, 90%, 92%);
+        color: hsl(21, 67%, 27%);
     }
 `;
 
