@@ -33,16 +33,16 @@ const Form = styled.div`
     }
 
     input, textarea {
-        background-color: ${color.chroma.creme100};
-        border: 2px solid ${color.chroma.brown100};
+        background-color: ${color.greyscale.g100};
+        border: 2px solid ${color.greyscale.g900};
         border-radius: 10px;
         padding: ${spacing.p200};
-        color: ${color.chroma.brown100};
+        color: ${color.greyscale.g900};
         margin-top: ${spacing.p600};
         font-size: ${font.size.s400};
 
         &::placeholder {
-            color: ${color.chroma.brown100};
+            color: ${color.greyscale.g900};
         }
 
         &:first-child {
@@ -64,11 +64,11 @@ const Form = styled.div`
 
 const Submit = styled.button`
     align-self: flex-end;
-    background-color: ${color.chroma.brown100};
+    background-color: ${color.greyscale.g900};
     border: none;
     border-radius: 9px;
     padding: ${spacing.p300};
-    color: ${color.chroma.creme100};
+    color: ${color.greyscale.g100};
     cursor: pointer;
     font-weight: 500;
     font-size: ${font.size.s400};

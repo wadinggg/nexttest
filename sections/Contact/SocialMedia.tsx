@@ -5,7 +5,7 @@ const SocialMedia = styled.div`
     margin-top: ${spacing.p500};
     a {
         text-decoration: none;
-        color: ${color.chroma.brown100}
+        color: ${color.greyscale.g900};
     }
 `
 

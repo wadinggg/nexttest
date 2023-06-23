@@ -3,6 +3,7 @@ import logo from '../images/logo.svg'
 import styled from 'styled-components'
 import { spacing } from '../system'
 import { Dispatch, SetStateAction, useEffect, useRef, useState } from 'react'
+import Link from 'next/link'
 
 interface IProps {
     setStuck?: Dispatch<SetStateAction<boolean>>;
@@ -32,13 +33,13 @@ export default function Header ({ setStuck, stuck }: IProps) {
 
     return (
         <HeaderContainer ref={ref} stuck={stuck}>
-            <a href='/'>
+            <Link href='/'>
                 <Image
                     src={logo}
                     alt="logo"
                     width={175}
                 />
-            </a>
+            </Link>
         </HeaderContainer>
     )
 }

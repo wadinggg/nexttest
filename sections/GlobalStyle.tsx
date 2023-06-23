@@ -14,8 +14,8 @@ const GlobalStyle: NamedExoticComponent<ExecutionProps & TemplateStringsArray> =
         font-family: 'Noto Sans', Helvetics, sans-serif;
         max-width: 100vw;
         overflow-x: hidden;
-        background-color: hsl(21, 90%, 92%);
-        color: hsl(21, 67%, 27%);
+        background-color: hsl(0, 0%, 95%);
+        color: hsl(0, 0%, 15%);
     }
 `;
 

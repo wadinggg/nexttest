@@ -2,9 +2,9 @@ import { color, font, spacing } from "../../system"
 import styled from "styled-components"
 
 const LearnMore = styled.a`
-    border: 2px solid ${color.chroma.brown100};
+    border: 2px solid ${color.greyscale.g900};
     border-radius: 30px;
-    color: ${color.chroma.brown100};
+    color: ${color.greyscale.g900};
     font-weight: 500;
     font-size: ${font.size.s400};
     text-decoration: none;

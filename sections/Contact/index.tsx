@@ -15,6 +15,7 @@ import Italic from "./Italic";
 import styled from "styled-components";
 import { MutableRefObject } from "react";
 import { font, spacing } from "../../system";
+import img from "../../images/findUs.jpg";
 
 interface IProps {
     innerRef?: MutableRefObject<HTMLDivElement | null>
@@ -33,25 +34,53 @@ const H33 = styled(H3)`
     margin-bottom: ${spacing.p400};
 `
 
+const IMG = styled.img`
+    width: 100%;
+    border-radius: 15px;
+`
+
+const Top = styled.div`
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 768px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+`
+
+const IMGCont = styled.div`
+    @media (max-width: 768px) {
+        display: none;
+    }
+`
+
 export default function Contact ({ innerRef }: IProps) {
     return (
         <ContactContainer ref={innerRef}>
             <H2>Find Us</H2>
-            <Address>
-                <Italic>Main Location</Italic><br />
-                Light Centre Marylebone<br />
-                Lower Ground<br />
-                49 Marylebone High St<br />
-                London<br />
-                W1U 5HJ
-            </Address>
-            <Address>
-                <Italic>By Request Only</Italic><br />
-                Light Centre Monument<br />
-                36 St Mary at Hill<br />
-                London<br />
-                EC3R 8DU
-            </Address>
+            <Top>
+                <div>
+                    <Address>
+                        <Italic>Main Location</Italic><br />
+                        Light Centre Marylebone<br />
+                        Lower Ground<br />
+                        49 Marylebone High St<br />
+                        London<br />
+                        W1U 5HJ
+                    </Address>
+                    <Address>
+                        <Italic>By Request Only</Italic><br />
+                        Light Centre Monument<br />
+                        36 St Mary at Hill<br />
+                        London<br />
+                        EC3R 8DU
+                    </Address>
+                </div>
+                <IMGCont>
+                    <IMG src={img.src} />
+                </IMGCont>
+            </Top>
             <Availability>
                 <H33>Availability</H33>
                 <Day>
@@ -87,7 +116,7 @@ export default function Contact ({ innerRef }: IProps) {
                 <Media>
                     <MIcon><BsInstagram /></MIcon>
                     <div>
-                        @instagram
+                        <a href="http://www.instagram.com/massagetherapy.london">massagetherapy.london</a>
                     </div>
                 </Media>
             </SocialMedia>

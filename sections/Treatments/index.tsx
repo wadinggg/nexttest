@@ -8,6 +8,7 @@ import sportsBg from "../../images/sports.jpg"
 import classicBg from "../../images/classic.jpg"
 import relaxBg from "../../images/relax.jpg"
 import manualBg from "../../images/manual.jpg"
+import lymphBg from "../../images/lymph.jpg"
 import pregnancyBg from "../../images/pregnancy.jpg"
 import { MutableRefObject } from "react";
 import styled from "styled-components";
@@ -84,7 +85,7 @@ export default function Treatments ({ innerRef }: IProps) {
                     </InnerContainer>
                     <LearnMore href="/treatment/pregnancy">Learn more</LearnMore>
                 </Treatment>
-                <Treatment bg={manualBg.src}>
+                <Treatment bg={lymphBg.src}>
                     <InnerContainer>
                         <h3>Manual Lymphatic Drainage</h3>
                         <p>

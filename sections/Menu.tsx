@@ -33,7 +33,7 @@ const MenuContainer = styled.div<IProps2>`
     display: ${({ hidden }) => hidden ? `none` : `flex`};
     flex-direction: column;
     z-index: 2000;
-    background-color: ${color.chroma.creme100};
+    background-color: ${color.greyscale.g100};
     width: 100vw;
     height: 100vh;
     padding: ${spacing.p300};
@@ -42,7 +42,7 @@ const MenuContainer = styled.div<IProps2>`
 const CloseButton = styled.button`
     align-self: flex-start;
     margin-bottom: ${spacing.p300};
-    background-color: ${color.chroma.creme100};
+    background-color: ${color.greyscale.g100};
     color: inherit;
     border: none;
 `
@@ -95,7 +95,6 @@ export default function Menu ({
         <MenuContainer hidden={hidden} setHidden={setHidden}>
             <CloseButton onClick={() => setHidden(true)}><GrClose size={30} /></CloseButton>
             <InnerContainer>
-                <StyledH2>What would you like to see?</StyledH2>
                 <UL>
                     <li>
                         <button onClick={(e) => {e.preventDefault(); setHidden(true); handleTreatment()}}>- Our Treatments</button>

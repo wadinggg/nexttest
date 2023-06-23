@@ -27,7 +27,7 @@ const Back = styled.div`
 
     a {
         text-decoration: 0;
-        color: ${color.chroma.brown100};
+        color: ${color.greyscale.g900};
         font-weight: bold;
         display: flex;
         align-items: center;
@@ -59,7 +59,7 @@ const BookButton = styled.a`
     margin-bottom: ${spacing.p700};
     color: inherit;
     text-decoration: none;
-    border: 2px solid ${color.chroma.brown100};
+    border: 2px solid ${color.greyscale.g900};
     border-radius: 50px;
     font-weight: 500;
     padding: ${spacing.p200} ${spacing.p400}
