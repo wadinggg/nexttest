@@ -75,7 +75,7 @@ export default function Contact ({ innerRef }: IProps) {
                 <Media>
                     <MIcon><BsEnvelope /></MIcon>
                     <div>
-                        email@email.com
+                        <a href="mailto: marta@massagetherapy.london">marta@massagetherapy.london</a>
                     </div>
                 </Media>
                 <Media>
