@@ -8,7 +8,7 @@ interface IProps {
 }
 
 const TreatmentContainer = styled.div<IProps>`
-    border: 2px solid ${color.greyscale.g100};
+    border: 2px solid ${color.greyscale.g900};
     border-radius: 0px 20px;
     margin-bottom: ${spacing.p800};
     display: flex;

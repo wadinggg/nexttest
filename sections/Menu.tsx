@@ -103,19 +103,19 @@ export default function Menu ({
             <InnerContainer>
                 <UL>
                     <li>
-                        <button onClick={(e) => {e.preventDefault(); setHidden(true); handleTreatment()}}>- Our Treatments</button>
+                        <button onClick={(e) => {e.preventDefault(); setHidden(true); handleTreatment()}}>OUR TREATMENTS</button>
                     </li>
                     <li>
-                        <button onClick={(e) => {e.preventDefault(); setHidden(true); handlePricing()}}>- Pricing</button>
+                        <button onClick={(e) => {e.preventDefault(); setHidden(true); handlePricing()}}>PRICING</button>
                     </li>
                     <li>
-                        <button onClick={(e) => {e.preventDefault(); setHidden(true); handleAbout()}}>- Our Practitioner</button>
+                        <button onClick={(e) => {e.preventDefault(); setHidden(true); handleAbout()}}>OUR PRACTITIONER</button>
                     </li>
                     <li>
-                        <button onClick={(e) => {e.preventDefault(); setHidden(true); handleReviews()}}>- Reviews</button>
+                        <button onClick={(e) => {e.preventDefault(); setHidden(true); handleReviews()}}>REVIEWS</button>
                     </li>
                     <li>
-                        <Link href='/about'>- Find Us</Link>
+                        <Link href='/about'>FIND US</Link>
                     </li>
                     {/* <li>
                         <button onClick={(e) => {e.preventDefault(); setHidden(true); handleInquiry()}}>- Got an Inquiry?</button>
