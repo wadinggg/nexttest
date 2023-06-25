@@ -55,6 +55,20 @@ const IMGCont = styled.div`
     }
 `
 
+const IMG2 = styled.div`
+    img { 
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    margin-bottom: ${spacing.p300};
+    margin-top: ${spacing.p700};
+
+    @media(min-width: 768px) {
+        display: none;
+    }
+`
+
 export default function Contact ({ innerRef }: IProps) {
     return (
         <ContactContainer ref={innerRef}>
@@ -120,6 +134,9 @@ export default function Contact ({ innerRef }: IProps) {
                     </div>
                 </Media>
             </SocialMedia>
+            <IMG2>
+                <IMG src={img.src} />
+            </IMG2>
         </ContactContainer>
     )
 }

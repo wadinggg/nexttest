@@ -5,6 +5,7 @@ import P from "./P";
 import { MutableRefObject } from "react";
 import img from "../../images/marta.jpg";
 import { styled } from "styled-components";
+import { spacing } from "../../system";
 
 interface IProps {
     innerRef?: MutableRefObject<HTMLDivElement | null>
@@ -18,6 +19,20 @@ const IMG = styled.div`
     }
 
     @media(max-width: 768px) {
+        display: none;
+    }
+`
+
+const IMG2 = styled.div`
+    img { 
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    margin-bottom: ${spacing.p700};
+    margin-top: 0;
+
+    @media(min-width: 768px) {
         display: none;
     }
 `
@@ -40,7 +55,10 @@ export default function About ({ innerRef }: IProps) {
                 <div>
                     <P>
                         Explore the healing touch of Marta Suchanska, founder of MɅSSɅGE. A holistic manual therapist with over a decade&apos;s experience, Marta brings together multidisciplinary approaches to offer tailored treatments. With a focus on root-cause healing, she&apos;s here to guide you towards better health.
-                    </P> 
+                    </P>
+                    <IMG2>
+                        <img src={img.src} />
+                    </IMG2>
                     <LearnMore href="/about">Learn more</LearnMore>
                 </div>
                 <IMG>

@@ -57,18 +57,19 @@ const BookButton = styled.a`
 
 const Logo = styled(Link)`
     justify-self: center;
-    display: none;
-    @media (min-width: 768px) {
-        display: inline;
-    }
+    display: inline;
+    // @media (min-width: 768px) {
+    //     display: inline;
+    // }
 `
 
 const Logo2 = styled(Link)`
     justify-self: center;
     display: inline;
-    @media (min-width: 768px) {
-        display: none;
-    }
+    display: none;
+    // @media (min-width: 768px) {
+    //     display: none;
+    // }
 `
 
 export default function Nav ({ stuck, setHidden }: IProps) {

@@ -3,6 +3,7 @@ import { Dispatch, SetStateAction } from "react";
 import styled from "styled-components";
 import { color, font, spacing } from "../system";
 import H2 from "../global/H2";
+import Link from "next/link";
 
 interface IProps {
     hidden: boolean
@@ -79,6 +80,11 @@ const InnerContainer = styled.div`
         margin: 0 auto;
         text-align: center;
     }
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
 `
 
 export default function Menu ({ 
@@ -109,7 +115,7 @@ export default function Menu ({
                         <button onClick={(e) => {e.preventDefault(); setHidden(true); handleReviews()}}>- Reviews</button>
                     </li>
                     <li>
-                        <button onClick={(e) => {e.preventDefault(); setHidden(true); handleContact()}}>- Find Us</button>
+                        <Link href='/about'>- Find Us</Link>
                     </li>
                     {/* <li>
                         <button onClick={(e) => {e.preventDefault(); setHidden(true); handleInquiry()}}>- Got an Inquiry?</button>

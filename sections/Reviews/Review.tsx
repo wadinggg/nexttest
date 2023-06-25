@@ -7,7 +7,7 @@ interface IProps {
 }
 
 const Container = styled.div`
-    border: 2px solid ${color.greyscale.g900};
+    border: 2px solid ${color.greyscale.g100};
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
