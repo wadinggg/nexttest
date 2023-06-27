@@ -22,7 +22,7 @@ const Navigation = styled.div<IProps>`
     width: 100%;
     z-index: 1000;
     padding: ${spacing.p300};
-    border-bottom: 2px solid ${color.greyscale.g900};
+    border-bottom: 1px solid ${color.greyscale.g900};
     // align-items: center;
     display: ${({stuck}) => stuck ? `flex` : `none`};
     // display: grid;

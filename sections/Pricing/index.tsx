@@ -14,8 +14,9 @@ interface IProps {
 }
 
 const Cont = styled.div<IProps>`
-  background-color: ${color.greyscale.g900};
-  color: ${color.greyscale.g100};
+  background-color: ${color.chroma.beige100};
+  color: ${color.greyscale.g900};
+  border-bottom: 1px solid ${color.greyscale.g900};
 `
 
 const Inner = styled(SectionContainer)`

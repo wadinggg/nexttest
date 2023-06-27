@@ -48,5 +48,6 @@ export const color = {
     chroma: {
         creme100: 'hsl(21, 90%, 92%)',
         brown100: 'hsl(21, 67%, 27%)',
+        beige100: 'hsl(42.86, 16.03%, 74.31%)'
     }
 }

@@ -9,7 +9,6 @@ interface IProps {
 
 const SectionContainer = styled.div<IProps>`
     padding: ${spacing.p500} ${spacing.p500} ${spacing.p800};
-    border-bottom: 1px solid ${color.greyscale.g900};
     position: relative;
 
     p { 

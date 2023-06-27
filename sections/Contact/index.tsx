@@ -14,7 +14,7 @@ import MIcon from "./MIcon";
 import Italic from "./Italic";
 import styled from "styled-components";
 import { MutableRefObject } from "react";
-import { font, spacing } from "../../system";
+import { color, font, spacing } from "../../system";
 import img from "../../images/findUs.jpg";
 
 interface IProps {
@@ -69,74 +69,84 @@ const IMG2 = styled.div`
     }
 `
 
+const Cont = styled.div<IProps>`
+  background-color: ${color.chroma.beige100};
+  color: ${color.greyscale.g900};
+`
+
+const Inner = styled(SectionContainer)`
+`
+
 export default function Contact ({ innerRef }: IProps) {
     return (
-        <ContactContainer ref={innerRef}>
-            <H2>Find Us</H2>
-            <Top>
-                <div>
-                    <Address>
-                        <Italic>Main Location</Italic><br />
-                        Light Centre Marylebone<br />
-                        Lower Ground<br />
-                        49 Marylebone High St<br />
-                        London<br />
-                        W1U 5HJ
-                    </Address>
-                    <Address>
-                        <Italic>By Request Only</Italic><br />
-                        Light Centre Monument<br />
-                        36 St Mary at Hill<br />
-                        London<br />
-                        EC3R 8DU
-                    </Address>
-                </div>
-                <IMGCont>
+        <Cont ref={innerRef}>
+            <Inner>
+                <H2>Find Us</H2>
+                <Top>
+                    <div>
+                        <Address>
+                            <Italic>Main Location</Italic><br />
+                            Light Centre Marylebone<br />
+                            Lower Ground<br />
+                            49 Marylebone High St<br />
+                            London<br />
+                            W1U 5HJ
+                        </Address>
+                        <Address>
+                            <Italic>By Request Only</Italic><br />
+                            Light Centre Monument<br />
+                            36 St Mary at Hill<br />
+                            London<br />
+                            EC3R 8DU
+                        </Address>
+                    </div>
+                    <IMGCont>
+                        <IMG src={img.src} />
+                    </IMGCont>
+                </Top>
+                <Availability>
+                    <H33>Availability</H33>
+                    <Day>
+                        <div>Monday</div>
+                        <div>9am - 8.30pm</div>
+                    </Day>
+                    <Day>
+                        <div>Tuesday</div>
+                        <div>9am - 8.30pm</div>
+                    </Day>
+                    <Day>
+                        <div>Wednesday</div>
+                        <div>9am - 1pm</div>
+                    </Day>
+                    <Day>
+                        <div>Thursday</div>
+                        <div>9am - 8.30pm</div>
+                    </Day>
+                </Availability>
+                <SocialMedia>
+                    <Media>
+                        <MIcon><BsEnvelope /></MIcon>
+                        <div>
+                            <a href="mailto: marta@massagetherapy.london">marta@massagetherapy.london</a>
+                        </div>
+                    </Media>
+                    <Media>
+                        <MIcon><BsTelephone /></MIcon>
+                        <div>
+                            0750 228 7115
+                        </div>
+                    </Media>
+                    <Media>
+                        <MIcon><BsInstagram /></MIcon>
+                        <div>
+                            <a href="http://www.instagram.com/massagetherapy.london">massagetherapy.london</a>
+                        </div>
+                    </Media>
+                </SocialMedia>
+                <IMG2>
                     <IMG src={img.src} />
-                </IMGCont>
-            </Top>
-            <Availability>
-                <H33>Availability</H33>
-                <Day>
-                    <div>Monday</div>
-                    <div>9am - 8.30pm</div>
-                </Day>
-                <Day>
-                    <div>Tuesday</div>
-                    <div>9am - 8.30pm</div>
-                </Day>
-                <Day>
-                    <div>Wednesday</div>
-                    <div>9am - 1pm</div>
-                </Day>
-                <Day>
-                    <div>Thursday</div>
-                    <div>9am - 8.30pm</div>
-                </Day>
-            </Availability>
-            <SocialMedia>
-                <Media>
-                    <MIcon><BsEnvelope /></MIcon>
-                    <div>
-                        <a href="mailto: marta@massagetherapy.london">marta@massagetherapy.london</a>
-                    </div>
-                </Media>
-                <Media>
-                    <MIcon><BsTelephone /></MIcon>
-                    <div>
-                        0750 228 7115
-                    </div>
-                </Media>
-                <Media>
-                    <MIcon><BsInstagram /></MIcon>
-                    <div>
-                        <a href="http://www.instagram.com/massagetherapy.london">massagetherapy.london</a>
-                    </div>
-                </Media>
-            </SocialMedia>
-            <IMG2>
-                <IMG src={img.src} />
-            </IMG2>
-        </ContactContainer>
+                </IMG2>
+            </Inner>
+        </Cont>
     )
 }

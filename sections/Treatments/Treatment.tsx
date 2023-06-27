@@ -37,7 +37,7 @@ const Blur =  styled.div`
     left: 0;
     border-radius: 0px 20px;
     background: hsla(0, 0%, 88%, 0.8);
-    backdrop-filter: blur(3px);
+    // backdrop-filter: blur(3px);
     z-index: 1;
 `
 

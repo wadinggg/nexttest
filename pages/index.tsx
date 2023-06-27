@@ -72,9 +72,9 @@ export default function Home() {
         <Header setStuck={setStuck} stuck={stuck} />
         <Marketing stuck={stuck} />
         <Treatments innerRef={treatmentRef}/>
-        <Pricing innerRef={pricingRef} />
         <About innerRef={aboutRef} />
         <Reviews innerRef={reviewRef} />
+        <Pricing innerRef={pricingRef} />
         <Contact innerRef={contactRef} />
         {/* <Inquiry innerRef={inquiryRef} /> */}
         <Footer />

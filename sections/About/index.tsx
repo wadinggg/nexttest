@@ -5,7 +5,7 @@ import P from "./P";
 import { MutableRefObject } from "react";
 import img from "../../images/marta.jpg";
 import { styled } from "styled-components";
-import { spacing } from "../../system";
+import { color, spacing } from "../../system";
 
 interface IProps {
     innerRef?: MutableRefObject<HTMLDivElement | null>
@@ -47,24 +47,34 @@ const Top = styled.div`
     }
 `
 
+const Cont = styled.div<IProps>`
+  background-color: ${color.greyscale.g900};
+  color: ${color.greyscale.g100};
+`
+
+const Inner = styled(SectionContainer)`
+`
+
 export default function About ({ innerRef }: IProps) {
     return (
-        <SectionContainer ref={innerRef}>
-            <H2>Our Practitioner</H2>
-            <Top>
-                <div>
-                    <P>
-                        Explore the healing touch of Marta Suchanska, founder of MɅSSɅGE. A holistic manual therapist with over a decade&apos;s experience, Marta brings together multidisciplinary approaches to offer tailored treatments. With a focus on root-cause healing, she&apos;s here to guide you towards better health.
-                    </P>
-                    <IMG2>
+        <Cont ref={innerRef}>
+            <Inner>
+                <H2>Our Practitioner</H2>
+                <Top>
+                    <div>
+                        <P>
+                            Explore the healing touch of Marta Suchanska, founder of MɅSSɅGE. A holistic manual therapist with over a decade&apos;s experience, Marta brings together multidisciplinary approaches to offer tailored treatments. With a focus on root-cause healing, she&apos;s here to guide you towards better health.
+                        </P>
+                        <IMG2>
+                            <img src={img.src} />
+                        </IMG2>
+                        <LearnMore href="/about">Learn more</LearnMore>
+                    </div>
+                    <IMG>
                         <img src={img.src} />
-                    </IMG2>
-                    <LearnMore href="/about">Learn more</LearnMore>
-                </div>
-                <IMG>
-                    <img src={img.src} />
-                </IMG>
-            </Top>
-        </SectionContainer>
+                    </IMG>
+                </Top>
+            </Inner>
+        </Cont>
     )
 }

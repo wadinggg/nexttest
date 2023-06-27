@@ -7,10 +7,10 @@ interface IProps {
 }
 
 const Row = styled.div<IProps>`
-    border: 2px solid ${color.greyscale.g100};
+    border: 2px solid ${color.greyscale.g900};
     border-bottom: none;
     &:last-child {
-        border-bottom: 2px solid ${color.greyscale.g100};
+        border-bottom: 2px solid ${color.greyscale.g900};
     };
     display: flex;
     flex-direction: ${({column}) => column ? 'column' : 'row'};
