@@ -83,7 +83,7 @@ export default function Swedish () {
                     />
                     <div>
                         <P>
-                            Elevate your strength and stamina with our sports and injury recovery massage. This dynamic treatment uses firm pressure to manipulate soft connective tissues, like tendons, ligaments, and muscles. Perfect for those leading an active lifestyle, seeking to boost their performance, prevent injuries, or expedite recovery time.
+                            Discover the power of Clossic/Swedish Massage - a time-tested technique designed to bring you unparalleled relaxation and an array of health benefits. Boost your immune system, empowering your body's natural defences to keep you at your best. Classic massage is a safe and highly recommended treatment for everyone, regardless of age or physical condition. Whether you're seeking a moment of respite from a demanding lifestyle or looking to enhance your overall well-being, this massage is tailored just for you.
                         </P>
                         <UL>
                             <li>Relieves tension</li>
