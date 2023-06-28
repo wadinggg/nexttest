@@ -8,7 +8,7 @@ interface IProps {
 }
 
 const TreatmentContainer = styled.div<IProps>`
-    border: 2px solid ${color.greyscale.g900};
+    color: ${color.greyscale.g100};
     border-radius: 0px 20px;
     margin-bottom: ${spacing.p800};
     display: flex;
@@ -44,7 +44,6 @@ const Blur =  styled.div`
 const Treatment = ({ children, bg }: IProps) => {
     return (
         <TreatmentContainer bg={bg}>
-            <Blur></Blur>
             {children}
         </TreatmentContainer>
     )

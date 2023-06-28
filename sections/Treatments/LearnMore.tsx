@@ -2,8 +2,8 @@ import { color, spacing } from "../../system"
 import styled from "styled-components"
 
 const LearnMore =  styled.a`
-    color: ${color.greyscale.g900};
-    border: 2px solid ${color.greyscale.g900};
+    color: ${color.greyscale.g100};
+    border: 2px solid ${color.greyscale.g100};
     text-decoration: none;
     font-weight: 500;
     align-self: flex-end;

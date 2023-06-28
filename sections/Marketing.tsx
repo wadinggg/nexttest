@@ -55,7 +55,7 @@ const Blur =  styled.div<IProps>`
     @media (max-width: 768px) {
         border-radius: ${({ stuck }) => stuck ? `0` : `20px`};
     }
-    background: hsla(0, 0%, 48%, 0.5);
+    // background: hsla(0, 0%, 48%, 0.5);
     // backdrop-filter: blur(4px);
     z-index: 1;
 `
