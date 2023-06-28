@@ -83,7 +83,7 @@ export default function Swedish () {
                     />
                     <div>
                         <P>
-                            Discover the power of Clossic/Swedish Massage - a time-tested technique designed to bring you unparalleled relaxation and an array of health benefits. Boost your immune system, empowering your body's natural defences to keep you at your best. Classic massage is a safe and highly recommended treatment for everyone, regardless of age or physical condition. Whether you're seeking a moment of respite from a demanding lifestyle or looking to enhance your overall well-being, this massage is tailored just for you.
+                            Discover the power of Clossic/Swedish Massage - a time-tested technique designed to bring you unparalleled relaxation and an array of health benefits. Boost your immune system, empowering your body&apos;s natural defences to keep you at your best. Classic massage is a safe and highly recommended treatment for everyone, regardless of age or physical condition. Whether you&apos;re seeking a moment of respite from a demanding lifestyle or looking to enhance your overall well-being, this massage is tailored just for you.
                         </P>
                         <UL>
                             <li>Relieves tension</li>
