@@ -106,13 +106,13 @@ export default function Menu ({
                         <button onClick={(e) => {e.preventDefault(); setHidden(true); handleTreatment()}}>OUR TREATMENTS</button>
                     </li>
                     <li>
-                        <button onClick={(e) => {e.preventDefault(); setHidden(true); handlePricing()}}>PRICING</button>
-                    </li>
-                    <li>
                         <Link href='/about'>OUR PRACTITIONER</Link>
                     </li>
                     <li>
                         <button onClick={(e) => {e.preventDefault(); setHidden(true); handleReviews()}}>REVIEWS</button>
+                    </li>
+                    <li>
+                        <button onClick={(e) => {e.preventDefault(); setHidden(true); handlePricing()}}>PRICING</button>
                     </li>
                     <li>
                         <button onClick={(e) => {e.preventDefault(); setHidden(true); handleContact()}}>FIND US</button>
