@@ -13,6 +13,7 @@ import pregnancyBg from "../../images/pregnancy.jpg"
 import { MutableRefObject } from "react";
 import styled from "styled-components";
 import { spacing } from "../../system";
+import TreatmentComponent from "./TreatmentComponent";
 
 interface IProps {
     innerRef?: MutableRefObject<HTMLDivElement | null>
@@ -40,60 +41,36 @@ export default function Treatments ({ innerRef }: IProps) {
         <SectionContainer ref={innerRef}>
             <H2>Our Treatments</H2>
             <TreatmentGrid>
-                <Treatment bg={deepBg.src}>
-                    <InnerContainer>
-                        <h3>Deep Tissue/Remedial Massage</h3>
-                        <p>
-                            Experience Restorative Calm, Release Deep-Seated Tension
-                        </p>
-                    </InnerContainer>
-                    <LearnMore href="/treatment/deep-tissue">Learn more</LearnMore>
-                </Treatment>
-                <Treatment bg={sportsBg.src}>
-                    <InnerContainer>
-                    <h3>Sports/Injury Recovery Massage</h3>
-                        <p>
-                            Boost Performance, Expedite Recovery for Peak Vitality
-                        </p> 
-                    </InnerContainer>
-                    <LearnMore href="/treatment/sports-injury">Learn more</LearnMore>
-                </Treatment>
-                <Treatment bg={classicBg.src}>
-                    <InnerContainer>
-                        <h3>Classic/Swedish Massage</h3>
-                        <p>
-                            Reinvigorate Health, Embrace Energizing Serenity
-                        </p>  
-                    </InnerContainer>
-                    <LearnMore href="/treatment/swedish-massage">Learn more</LearnMore>
-                </Treatment>
-                <Treatment bg={relaxBg.src}>
-                    <InnerContainer>
-                        <h3>Relaxing/Holistic Massage</h3>
-                        <p>
-                            Escape the Hustle, Indulge in Pure Relaxation
-                        </p> 
-                    </InnerContainer>
-                    <LearnMore href="/treatment/holistic-massage">Learn more</LearnMore>
-                </Treatment>
-                <Treatment bg={pregnancyBg.src}>
-                    <InnerContainer>
-                        <h3>Pregnancy Massage</h3>
-                        <p>
-                            Embrace the Journey, Nurture Motherhood with Care
-                        </p> 
-                    </InnerContainer>
-                    <LearnMore href="/treatment/pregnancy">Learn more</LearnMore>
-                </Treatment>
-                <Treatment bg={lymphBg.src}>
-                    <InnerContainer>
-                        <h3>Manual Lymphatic Drainage</h3>
-                        <p>
-                            Detox and Unwind, Revitalize with Gentle Stimulation
-                        </p>  
-                    </InnerContainer>
-                    <LearnMore href="/treatment/lymphatic">Learn more</LearnMore>
-                </Treatment>
+                <TreatmentComponent 
+                    title="Deep Tissue/Remedial Massage"
+                    href="/treatment/deep-tissue"
+                    bg={deepBg.src} 
+                />
+                <TreatmentComponent 
+                    title="Sports/Injury Recovery Massage"
+                    href="/treatment/sports-injury" 
+                    bg={sportsBg.src} 
+                />
+                <TreatmentComponent 
+                    title="Classic/Swedish Massage"
+                    href="/treatment/swedish-massage" 
+                    bg={classicBg.src} 
+                />
+                <TreatmentComponent 
+                    title="Relaxing/Holistic Massage"
+                    href="/treatment/holistic-massage" 
+                    bg={relaxBg.src} 
+                />
+                <TreatmentComponent 
+                    title="Pregnancy Massage"
+                    href="/treatment/pregnancy" 
+                    bg={pregnancyBg.src} 
+                />
+                <TreatmentComponent 
+                    title="Manual Lymphatic Drainage"
+                    href="/treatment/lymphatic" 
+                    bg={lymphBg.src} 
+                />
             </TreatmentGrid>
         </SectionContainer>
     )

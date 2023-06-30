@@ -5,6 +5,7 @@ import Review from "./Review";
 import styled from "styled-components";
 import { color, font, spacing } from "../../system";
 import { MutableRefObject, RefObject } from "react";
+import pic from '../../images/reviews.jpg';
 
 interface IProps {
     innerRef?: MutableRefObject<HTMLDivElement | null>
@@ -41,9 +42,15 @@ const ReviewWrapper = styled.div`
 `
 
 const Cont = styled.div<IProps>`
-  background-color: ${color.chroma.beige100};
+  background-color: ${color.greyscale.g100};
   color: ${color.greyscale.g900};
   border-bottom: 1px solid ${color.greyscale.g900};
+`
+
+const IMG = styled.img`
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: ${spacing.p700};
 `
 
 const Inner = styled(SectionContainer)`
@@ -97,17 +104,7 @@ export default function Reviews ({ innerRef }: IProps) {
                             &amp; <Name>Lea Kristensen</Name> (Psychotherapist)
                         </Client>
                     </Review>
-                    <Review>
-                        <Quotation><BsQuote size={50} /></Quotation>
-                        <Quote>
-                            I have been a regular client for the last 18 months. I can recommend Marta; she is both very
-                            professional and charming.
-                        </Quote>
-                        <Client>
-                            <Name>Alexander Michell</Name><br />
-                            Retired banker
-                        </Client>
-                    </Review>
+                    <IMG src={pic.src}/>
                 </ReviewWrapper>
             </Inner>
         </Cont>

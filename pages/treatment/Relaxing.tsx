@@ -71,7 +71,7 @@ export default function Relaxing () {
             <Back><Link href="/"><BsArrowLeftShort size={30}/><span>back</span></Link></Back>
             <SectionContainer>
                 <H2>
-                    Relaxing/Holistic Massage
+                    Indulge in Pure Relaxation
                 </H2>
                 <InfoContainer>
                     <IMG

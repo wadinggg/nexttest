@@ -71,7 +71,7 @@ export default function DeepTissue () {
             <Back><Link href="/"><BsArrowLeftShort size={30}/><span>back</span></Link></Back>
             <SectionContainer>
                 <H2>
-                    Deep Tissue/Remedial Massage
+                    Release Deep-Seated Tension
                 </H2>
                 <InfoContainer>
                     <IMG

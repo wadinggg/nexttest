@@ -71,7 +71,7 @@ export default function Sports () {
             <Back><Link href="/"><BsArrowLeftShort size={30}/><span>back</span></Link></Back>
             <SectionContainer>
                 <H2>
-                    Sports/Injury Recovery Massage
+                    Boost Performance
                 </H2>
                 <InfoContainer>
                     <IMG

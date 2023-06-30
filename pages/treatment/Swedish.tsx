@@ -73,7 +73,7 @@ export default function Swedish () {
             <Back><Link href="/"><BsArrowLeftShort size={30}/><span>back</span></Link></Back>
             <SectionContainer>
                 <H2>
-                    Classic/Swedish Massage
+                    Embrace Energizing Serenity
                 </H2>
                 <InfoContainer>
                     <IMG

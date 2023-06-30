@@ -71,7 +71,7 @@ export default function Lymphatic () {
             <Back><Link href="/"><BsArrowLeftShort size={30}/><span>back</span></Link></Back>
             <SectionContainer>
                 <H2>
-                    Manual Lymphatic Drainage
+                    Revitalize with Gentle Stimulation
                 </H2>
                 <InfoContainer>
                     <IMG

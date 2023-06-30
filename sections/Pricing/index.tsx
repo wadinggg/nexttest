@@ -7,6 +7,7 @@ import Bold from "../../global/Bold";
 import { MutableRefObject } from "react";
 import { styled } from "styled-components";
 import { color, spacing } from "../../system";
+import bgImg from '../../images/bg.jpg';
 
 interface IProps {
   innerRef?: MutableRefObject<HTMLDivElement | null>
@@ -14,17 +15,37 @@ interface IProps {
 }
 
 const Cont = styled.div<IProps>`
-  background-color: ${color.chroma.beige100};
+  background-color: ${color.greyscale.g100};
   color: ${color.greyscale.g900};
   border-bottom: 1px solid ${color.greyscale.g900};
+  background-image: url(${bgImg.src});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 `
 
 const Inner = styled(SectionContainer)`
+  z-index: 2;
+`
+
+const Blur =  styled.div<IProps>`
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    // background: hsla(0, 0%, 48%, 0.5);
+    // backdrop-filter: blur(4px);
+    z-index: 1;
+    background-color: ${color.greyscale.g100};
+    opacity: 0.85;
 `
 
 export default function Pricing ({ innerRef }: IProps) {
     return (
       <Cont ref={innerRef}>
+        <Blur></Blur>
         <Inner>
           <H2>Pricing</H2>
           <Table />

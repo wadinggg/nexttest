@@ -71,7 +71,7 @@ export default function Pregnancy () {
             <Back><Link href="/"><BsArrowLeftShort size={30}/><span>back</span></Link></Back>
             <SectionContainer>
                 <H2>
-                    Pregnancy Massage
+                    Nurture Motherhood with Care
                 </H2>
                 <InfoContainer>
                     <IMG

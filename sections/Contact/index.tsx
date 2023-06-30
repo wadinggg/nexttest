@@ -70,8 +70,8 @@ const IMG2 = styled.div`
 `
 
 const Cont = styled.div<IProps>`
-  background-color: ${color.chroma.beige100};
-  color: ${color.greyscale.g900};
+    background-color: ${color.greyscale.g100};
+    color: ${color.greyscale.g900};
 `
 
 const Inner = styled(SectionContainer)`
