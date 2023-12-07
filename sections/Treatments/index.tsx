@@ -52,8 +52,8 @@ export default function Treatments ({ innerRef }: IProps) {
                     bg={sportsBg.src} 
                 />
                 <TreatmentComponent 
-                    title="Classic/Swedish Massage"
-                    href="/treatment/swedish-massage" 
+                    title="Myofascial Release Therapy"
+                    href="/treatment/myofascial-release" 
                     bg={classicBg.src} 
                 />
                 <TreatmentComponent 

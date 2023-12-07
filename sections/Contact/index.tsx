@@ -111,16 +111,16 @@ export default function Contact ({ innerRef }: IProps) {
                         <div>9am - 8.30pm</div>
                     </Day>
                     <Day>
-                        <div>Tuesday</div>
-                        <div>9am - 8.30pm</div>
-                    </Day>
-                    <Day>
                         <div>Wednesday</div>
-                        <div>9am - 1pm</div>
+                        <div>9am - 4.30pm</div>
                     </Day>
                     <Day>
-                        <div>Thursday</div>
+                        <div>Friday</div>
                         <div>9am - 8.30pm</div>
+                    </Day>
+                    <Day>
+                        <div>Sunday</div>
+                        <div>10am - 3pm</div>
                     </Day>
                 </Availability>
                 <SocialMedia>

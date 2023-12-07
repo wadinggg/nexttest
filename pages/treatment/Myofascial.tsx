@@ -67,13 +67,13 @@ const BookButton = styled.a`
     padding: ${spacing.p200} ${spacing.p400}
 `
 
-export default function Swedish () {
+export default function Myofascial () {
     return (
         <div>
             <Back><Link href="/"><BsArrowLeftShort size={30}/><span>back</span></Link></Back>
             <SectionContainer>
                 <H2>
-                    Embrace Energizing Serenity
+                    Release Tightness and Pain
                 </H2>
                 <InfoContainer>
                     <IMG
@@ -83,14 +83,18 @@ export default function Swedish () {
                     />
                     <div>
                         <P>
-                            Discover the power of Clossic/Swedish Massage - a time-tested technique designed to bring you unparalleled relaxation and an array of health benefits. Boost your immune system, empowering your body&apos;s natural defences to keep you at your best. Classic massage is a safe and highly recommended treatment for everyone, regardless of age or physical condition. Whether you&apos;re seeking a moment of respite from a demanding lifestyle or looking to enhance your overall well-being, this massage is tailored just for you.
+                            {/* Discover the power of Clossic/Swedish Massage - a time-tested technique designed to bring you unparalleled relaxation and an array of health benefits. Boost your immune system, empowering your body&apos;s natural defences to keep you at your best. Classic massage is a safe and highly recommended treatment for everyone, regardless of age or physical condition. Whether you&apos;re seeking a moment of respite from a demanding lifestyle or looking to enhance your overall well-being, this massage is tailored just for you. */}
+                            Experience the transformative power of myofascial release therapy, a holistic
+                            treatment unlocking tension and restoring freedom of movement. This treatment uses gentle, sustained pressure to release tightness in the fascia. Discover relief
+                            from chronic muscle stress, experience improved range of movement, and feel
+                            rejuvenating effects of this specialized therapy.
                         </P>
                         <UL>
-                            <li>Relieves tension</li>
-                            <li>Boosts immunity</li>
-                            <li>Stimulates nerves</li>
-                            <li>Improves mood</li>
-                            <li>Eases chronic pain</li>
+                            <li>Enhances flexibility</li>
+                            <li>Reduces pain</li>
+                            <li>Relaxes muscles</li>
+                            <li>Boosts posture</li>
+                            <li>Prevents injuries</li>
                         </UL>
                         <BookButton 
                             href="https://marta-suchanska.uk2.cliniko.com/bookings" 

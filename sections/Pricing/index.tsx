@@ -60,6 +60,13 @@ export default function Pricing ({ innerRef }: IProps) {
             <p>
               Gift vouchers available
             </p>
+            {/* <div className="vaocher-form-container" data-site-id="9a9e8bc7-5645-44ed-81a8-bdaf9c1a6201" data-platform="other" data-embed-mode="full"></div> */}
+            {/* <script
+            type="text/javascript">(function(e,c,a,s){e[s]=e[s]||function(){(e[s].callbacks=e[s]
+            .callbacks||[]).push(arguments)};var
+            t=c.createElement("script");t.async=1,t.defer=1,t.src=a,c.head.appendChild(t)})(w
+            indow,document,"https://vaocher.app/resources/embed/embed.js?3.9.1","vaoc
+            herapp"</script> */}
           </InnerContainer>
           <InnerContainer>
             <H4>How to Pay</H4>

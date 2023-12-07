@@ -2,7 +2,7 @@ import { useRouter } from 'next/router'
 import { notFound } from 'next/navigation'
 import DeepTissue from "./DeepTissue";
 import Sports from './Sports';
-import Swedish from './Swedish';
+import Myofascial from './Myofascial';
 import Relaxing from './Relaxing';
 import Pregnancy from './Pregnancy';
 import Lymphatic from './Lymphatic';
@@ -11,7 +11,7 @@ export default function Treatment() {
   
   const router = useRouter()
   const treatment_type = router.query.treatment_type
-  const whitelist = ['deep-tissue', 'sports-injury', 'swedish-massage', 'pregnancy', 'lymphatic']
+  const whitelist = ['deep-tissue', 'sports-injury', 'myofascial-release', 'pregnancy', 'lymphatic']
 
   const returnTreatment = () => {
     if (treatment_type === 'deep-tissue') {
@@ -20,8 +20,8 @@ export default function Treatment() {
     if (treatment_type === 'sports-injury') {
       return <Sports />
     } 
-    if (treatment_type === 'swedish-massage') {
-      return <Swedish />
+    if (treatment_type === 'myofascial-release') {
+      return <Myofascial />
     } 
     if (treatment_type === 'holistic-massage') {
       return <Relaxing />
